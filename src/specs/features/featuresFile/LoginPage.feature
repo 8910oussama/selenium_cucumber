@@ -3,13 +3,13 @@
 #Description: Formation 
 
 @authentification
-Feature: Authentification de login de l application SwagLabs
+Feature: Authentification de login de l application nopcommerce
   En tant que utilisateur, je souhaite naviger
 
   @login_CasPassant
-  Scenario: Authentification sur l application SwagLabs - Cas Passant
-    Given Je me connecte sur l application SwagLabs
-    When Je saisis le user name "standard_user"
-    And Je saisis le PassWord "secret_sauce"
+  Scenario: Authentification sur l application nopcommerce - Cas Passant
+    Given Je me connecte sur l application nopcommerce
+    When Je saisis l email "admin@yourstore.com"
+    And Je saisis le PassWord "admin"
     And Je clique sur le bouton LOGIN
     Then Je me redirige vers la page home "PRODUCTS"
