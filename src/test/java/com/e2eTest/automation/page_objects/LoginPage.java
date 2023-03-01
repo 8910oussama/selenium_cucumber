@@ -22,6 +22,10 @@ public class LoginPage {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//button[@type='submit']")
 	public static WebElement btnLOGIN;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//h1[contains(text(),'Dashboard')]")
+	public static WebElement titlePage;
 
 	public LoginPage() {
 		PageFactory.initElements(Setup.getDriver(), this);
